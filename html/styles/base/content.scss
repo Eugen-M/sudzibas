@@ -18,11 +18,10 @@
         flex-wrap: wrap;
         flex-direction: row;
         align-items: flex-start;
+        border-top: 2px solid #F9F7F6;
     }
 
     &__column {
-        border-top: 2px solid #F9F7F6;
-
         &_50 {
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;

@@ -23,8 +23,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-.container__column {
   border-top: 2px solid #F9F7F6;
 }
 .container__column_50 {

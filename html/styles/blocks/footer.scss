@@ -84,6 +84,8 @@
 
 @media (max-width: 767px) {
     .footer-page {
+        padding-top: 26px;
+
         &__wrap {
             flex-wrap: wrap;
         }
@@ -101,9 +103,13 @@
         }
 
         &__logo {
-            margin: 0 auto 20px;
+            margin: 0 auto 37px;
             width: 140px;
             display: block;
+        }
+
+        &__copyright {
+            padding: 23px 0;
         }
     }
 }
@@ -115,6 +121,10 @@
             flex: 0 0 100%;
             max-width: 100%;
             text-align: center;
+
+            &:last-child {
+                margin-bottom: 29px;
+            }
         }
     }
 }

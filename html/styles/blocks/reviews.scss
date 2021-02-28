@@ -1,0 +1,150 @@
+
+.reviews {
+    padding: 120px 0 100px;
+
+    &__box {
+        display: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:first-child {
+            display: block;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: 0 0 0 10%;
+    }
+
+    &__text {
+        padding: 86px 200px 0 0;
+        font-weight: 300;
+        font-size: 32px;
+        color: #302D2A;
+        line-height: 1.56;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 40px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 57px;
+            height: 44px;
+            background: url("data:image/svg+xml,%3Csvg width='57' height='44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.291 43.52V31.264c0-3.525.661-7.19 1.983-10.995A47.149 47.149 0 017.802 9.392c2.363-3.445 5.007-6.349 7.931-8.712l10.095 6.549a65.119 65.119 0 00-5.949 11.176c-1.562 3.845-2.323 8.092-2.283 12.738v12.378H.29zm30.463 0V31.264c0-3.525.662-7.19 1.983-10.995a47.144 47.144 0 015.528-10.876C40.63 5.947 43.272 3.043 46.197.68L56.29 7.229a65.119 65.119 0 00-5.948 11.176c-1.563 3.845-2.324 8.092-2.284 12.738v12.378H30.755z' fill='%23D97E56'/%3E%3C/svg%3E") no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    &__ava {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 20px;
+        color: #302D2A;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 1.2;
+        color: #666;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__arrow {
+        width: 72px;
+        height: 72px;
+        margin-top: -36px;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        background: rgba(217, 126, 86, 0.2) url("data:image/svg+xml,%3Csvg width='20' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 0l-1.41 1.41L16.17 6H0v2h16.17l-4.59 4.59L13 14l7-7-7-7z' fill='%23D97E56'/%3E%3C/svg%3E") center no-repeat;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .reviews {
+        &__item {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 64px 0;
+
+        &__item {
+            padding-bottom: 111px;
+        }
+
+        &__text {
+            font-size: 24px;
+            padding: 58px 0 0;
+            line-height: 1.67;
+            margin-bottom: 37px;
+
+            &::before {
+                width: 42px;
+                height: 33px;
+                margin-left: -21px;
+                left: 50%;
+            }
+        }
+
+        &__arrow {
+            width: 64px;
+            height: 64px;
+            top: inherit;
+            left: 50%;
+            bottom: 0;
+            margin-left: -32px;
+            margin-top: 0;
+        }
+
+        &__row {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__column {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        &__ava {
+            margin-bottom: 14px;
+        }
+
+        &__name {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+    }
+}

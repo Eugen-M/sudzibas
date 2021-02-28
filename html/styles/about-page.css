@@ -1,6 +1,15 @@
 @import url(base/default.css);
 @import url(base/content.css);
 @import url(base/slick.css);
+@import url(blocks/leaflet.css);
 @import url(blocks/header.css);
 @import url(blocks/footer.css);
 @import url(blocks/about.css);
+@import url(blocks/why-block.css);
+@import url(blocks/our-works.css);
+@import url(blocks/our-values.css);
+@import url(blocks/stats.css);
+@import url(blocks/reviews.css);
+@import url(blocks/our-team.css);
+@import url(blocks/contacts.css);
+@import url(blocks/social-block.css);

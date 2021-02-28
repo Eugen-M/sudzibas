@@ -75,6 +75,9 @@
 }
 
 @media (max-width: 767px) {
+  .footer-page {
+    padding-top: 26px;
+  }
   .footer-page__wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -92,9 +95,12 @@
     max-width: 100%;
   }
   .footer-page__logo {
-    margin: 0 auto 20px;
+    margin: 0 auto 37px;
     width: 140px;
     display: block;
+  }
+  .footer-page__copyright {
+    padding: 23px 0;
   }
 }
 @media (max-width: 568px) {
@@ -104,5 +110,8 @@
             flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
+  }
+  .footer-page__navi:last-child {
+    margin-bottom: 29px;
   }
 }
