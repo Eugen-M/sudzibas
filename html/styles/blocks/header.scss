@@ -293,6 +293,11 @@
             width: 130px;
             border-radius: 8px;
             list-style-type: none;
+            display: none;
+        }
+
+        &-item:hover &-dropdown {
+            display: block;
         }
 
         &-droplink {

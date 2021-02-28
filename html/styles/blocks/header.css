@@ -287,6 +287,10 @@
   width: 130px;
   border-radius: 8px;
   list-style-type: none;
+  display: none;
+}
+.header-page__menu-item:hover .header-page__menu-dropdown {
+  display: block;
 }
 .header-page__menu-droplink {
   color: #fff;
