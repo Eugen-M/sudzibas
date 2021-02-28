@@ -48,6 +48,10 @@
             height: 28px;
             background: url(../../i/logo.svg) no-repeat;
         }
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__navi {

@@ -43,6 +43,9 @@
   height: 28px;
   background: url(../../i/logo.svg) no-repeat;
 }
+.header-page__logo:hover {
+  text-decoration: none;
+}
 .header-page__add-complain {
   display: inline-block;
   vertical-align: middle;

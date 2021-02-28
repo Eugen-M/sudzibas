@@ -52,6 +52,9 @@
   height: 28px;
   background: url(../../i/logo.svg) no-repeat;
 }
+.footer-page__logo:hover {
+  text-decoration: none;
+}
 .footer-page__navi {
   margin: 0 0 24px;
   list-style-type: none;
