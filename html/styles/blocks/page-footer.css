@@ -1,22 +1,22 @@
-.footer-page {
+.page-footer {
   position: relative;
   background: #E6E6E6;
   padding: 39px 0 1px;
   z-index: 9;
 }
-.footer-page__ins {
+.page-footer__ins {
   max-width: 1186px;
   margin: 0 auto;
   padding: 0 20px;
 }
-.footer-page__copyright {
+.page-footer__copyright {
   text-align: center;
   font-size: 14px;
   color: rgba(48, 45, 42, 0.5);
   line-height: 1.15;
   padding: 28px 0;
 }
-.footer-page__wrap {
+.page-footer__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@
   border-bottom: 2px solid #D1D1D1;
   padding-bottom: 1px;
 }
-.footer-page__logo {
+.page-footer__logo {
   padding-left: 38px;
   font-weight: 600;
   color: #302D2A;
@@ -42,7 +42,7 @@
   display: inline-block;
   vertical-align: middle;
 }
-.footer-page__logo:before {
+.page-footer__logo:before {
   content: "";
   position: absolute;
   left: 2px;
@@ -52,18 +52,18 @@
   height: 28px;
   background: url(../../i/logo.svg) no-repeat;
 }
-.footer-page__logo:hover {
+.page-footer__logo:hover {
   text-decoration: none;
 }
-.footer-page__navi {
+.page-footer__navi {
   margin: 0 0 24px;
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
 }
-.footer-page__navi-item {
+.page-footer__navi-item {
   margin-bottom: 12px;
 }
-.footer-page__navi-title {
+.page-footer__navi-title {
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -72,49 +72,49 @@
   padding-bottom: 4px;
   display: block;
 }
-.footer-page__navi-link {
+.page-footer__navi-link {
   color: #302D2A;
   line-height: 1.2;
 }
 
 @media (max-width: 767px) {
-  .footer-page {
+  .page-footer {
     padding-top: 26px;
   }
-  .footer-page__wrap {
+  .page-footer__wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .footer-page__navi {
+  .page-footer__navi {
     -ms-flex: 0 0 33.333333%;
     -webkit-box-flex: 0;
             flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
-  .footer-page__column {
+  .page-footer__column {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
             flex: 0 0 100%;
     max-width: 100%;
   }
-  .footer-page__logo {
+  .page-footer__logo {
     margin: 0 auto 37px;
     width: 140px;
     display: block;
   }
-  .footer-page__copyright {
+  .page-footer__copyright {
     padding: 23px 0;
   }
 }
 @media (max-width: 568px) {
-  .footer-page__navi {
+  .page-footer__navi {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
             flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
   }
-  .footer-page__navi:last-child {
+  .page-footer__navi:last-child {
     margin-bottom: 29px;
   }
 }

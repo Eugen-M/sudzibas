@@ -1,4 +1,4 @@
-.header-page {
+.page-header {
     background: #302D2A;
     z-index: 10;
     position: relative;
@@ -64,7 +64,7 @@
     }
 
     &__search {
-        width: 100%;
+        max-width: 100%;
 
         &-wrap {
             display: flex;
@@ -313,7 +313,7 @@
             display: block;
         }
 
-        &-dropdownitem {
+        &-d-item {
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
 
             &:last-child {
@@ -321,7 +321,7 @@
             }
         }
 
-        &-dropdownlink {
+        &-d-link {
             color: #fff;
             font-size: 13px;
             line-height: 1.2;
@@ -511,7 +511,7 @@
 }
 
 @media (min-width: 993px) {
-    .header-page {
+    .page-header {
         &__lang {
             &-wrap:hover &-dropdown {
                 display: block;
@@ -521,7 +521,7 @@
 }
 
 @media (max-width: 992px) {
-    .header-page {
+    .page-header {
         &__wrap {
             padding: 16px 20px;
         }
@@ -604,7 +604,7 @@
 }
 
 @media (max-width: 767px) {
-    .header-page {
+    .page-header {
         &__logo {
             order: 0;
             width: 30px;

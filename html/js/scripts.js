@@ -1,32 +1,32 @@
 $( document ).ready(function() {
     // click for btn burger
-    $('.header-page__btn-burger').click(function(){
-		$('.header-page__mob-dropdown').toggleClass('header-page__mob-dropdown_opened');
-        $('.header-page__btn-burger').toggleClass('header-page__btn-burger_opened');
+    $('.page-header__btn-burger').click(function(){
+		$('.page-header__mob-dropdown').toggleClass('page-header__mob-dropdown_opened');
+        $('.page-header__btn-burger').toggleClass('page-header__btn-burger_opened');
 	});
 
     // click for lang
-    $('.header-page__mob-dropdown .header-page__lang').click(function(){
-        $(this).toggleClass('header-page__lang_opened');
+    $('.page-header__mob-dropdown .page-header__lang').click(function(){
+        $(this).toggleClass('page-header__lang_opened');
 	});
 
     // click for search mobile
-    $('.header-page__search-loupe').click(function(){
-        $('.header-page__search').toggleClass('header-page__search_opened');
-        $('.header-page').toggleClass('header-page_opened-search');
+    $('.page-header__search-loupe').click(function(){
+        $('.page-header__search').toggleClass('page-header__search_opened');
+        $('.page-header').toggleClass('page-header_opened-search');
 	});
 
     // click for navi link Help
-    $('.header-page__menu-item_dropdown .header-page__menu-link').click(function(e){
-        $(this).parent('.header-page__menu-item_dropdown').toggleClass('header-page__menu-item_opened');
+    $('.page-header__menu-item_dropdown .page-header__menu-link').click(function(e){
+        $(this).parent('.page-header__menu-item_dropdown').toggleClass('page-header__menu-item_opened');
 
         e.stopPropagation();
         e.preventDefault();
 	});
 
     // click for navi dropdoqn link Help
-    $('.header-page__navi-link_headphone').click(function(e){
-        $(this).parent('.header-page__navi-item').toggleClass('header-page__navi-item_opened');
+    $('.page-header__navi-link_headphone').click(function(e){
+        $(this).parent('.page-header__navi-item').toggleClass('page-header__navi-item_opened');
 
         e.stopPropagation();
         e.preventDefault();

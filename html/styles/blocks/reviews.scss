@@ -1,7 +1,8 @@
-
 .reviews {
     padding: 120px 0 100px;
+}
 
+.review {
     &__box {
         display: none;
 
@@ -83,7 +84,7 @@
 }
 
 @media (max-width: 992px) {
-    .reviews {
+    .review {
         &__item {
             padding-left: 0;
         }
@@ -93,7 +94,9 @@
 @media (max-width: 768px) {
     .reviews {
         padding: 64px 0;
+    }
 
+    .review {
         &__item {
             padding-bottom: 111px;
         }
