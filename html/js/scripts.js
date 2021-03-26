@@ -25,7 +25,7 @@ $( document ).ready(function() {
 	});
 
     // click for navi dropdoqn link Help
-    $('.page-header__navi-link_headphone').click(function(e){
+    $('.page-header__navi-link_arrow').click(function(e){
         $(this).parent('.page-header__navi-item').toggleClass('page-header__navi-item_opened');
 
         e.stopPropagation();
@@ -51,4 +51,8 @@ $( document ).ready(function() {
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(mapid);
+
+    $('.header-profile__row_main, .header-profile__btn-close').click(function(){
+        $(this).parents('.header-profile').toggleClass('header-profile_opened');
+	});
 });

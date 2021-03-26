@@ -393,6 +393,9 @@
   display: none;
   padding-left: 10px;
 }
+.page-header__navi-dropdown_no-padd {
+  padding-left: 0;
+}
 .page-header__navi-item_opened .page-header__navi-dropdown {
   display: block;
 }
@@ -401,7 +404,7 @@
   color: #fff;
   display: block;
   position: relative;
-  padding: 16px 25px 16px 0;
+  padding: 16px 0 16px 37px;
 }
 .page-header__navi-link_arrow::after {
   content: "";
@@ -412,10 +415,22 @@
   position: relative;
   background: url("data:image/svg+xml,%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.959 7.083l3.542 3.542 3.541-3.542H4.96z' fill='%23fff'/%3E%3C/svg%3E") center no-repeat;
 }
+.page-header__navi-link_arrow-brown::after {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  width: 17px;
+  height: 17px;
+  margin-top: -8.5px;
+  background: url("data:image/svg+xml,%3Csvg width='9' height='4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.959.083l3.542 3.542L8.042.083H.96z' fill='%23CCB382'/%3E%3C/svg%3E") center no-repeat;
+}
+.page-header__navi-link_arrow:focus, .page-header__navi-link_arrow:active {
+  text-decoration: none;
+}
 .page-header__navi-link::before {
   content: "";
   position: absolute;
-  right: 10px;
+  left: 0;
   width: 20px;
   height: 20px;
   top: 50%;
@@ -462,6 +477,15 @@
   height: 20px;
   margin-top: -10px;
   background-size: auto 120px;
+}
+.page-header__navi-link_account::before {
+  width: 23px;
+  height: 20px;
+  margin-top: -10px;
+  background: url("data:image/svg+xml,%3Csvg width='23' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.25 0C4.144 0 0 4.256 0 9.5S4.144 19 9.25 19s9.25-4.256 9.25-9.5S14.356 0 9.25 0zm0 2.85c1.535 0 2.775 1.273 2.775 2.85 0 1.577-1.24 2.85-2.775 2.85-1.536 0-2.775-1.273-2.775-2.85 0-1.577 1.24-2.85 2.775-2.85zm0 13.49c-2.313 0-4.357-1.216-5.55-3.059.028-1.89 3.7-2.926 5.55-2.926 1.84 0 5.522 1.035 5.55 2.926-1.193 1.843-3.238 3.059-5.55 3.059z' fill='%23CCB382'/%3E%3Cpath d='M21.701 4.156c0 2.032-1.6 3.657-3.547 3.657-1.946 0-3.547-1.625-3.547-3.657S16.207.5 18.154.5s3.547 1.624 3.547 3.656z' fill='%23fff' stroke='%23302D2A'/%3E%3C/svg%3E") center no-repeat;
+}
+.page-header__navi-item_opened .page-header__navi-link_arrow-brown::after {
+  background: url("data:image/svg+xml,%3Csvg width='8' height='4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.16 3.917L3.702.375l3.541 3.542H.16z' fill='%23CCB382'/%3E%3C/svg%3E") center no-repeat;
 }
 .page-header__navi-dropdown .page-header__navi-link {
   padding-top: 14px;
