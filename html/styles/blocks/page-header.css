@@ -403,7 +403,7 @@
   color: #fff;
   display: block;
   position: relative;
-  padding: 16px 0 16px 37px;
+  padding: 16px 37px 16px 0;
 }
 .page-header__navi-link_arrow::after {
   content: "";
@@ -429,7 +429,7 @@
 .page-header__navi-link::before {
   content: "";
   position: absolute;
-  left: 0;
+  right: 10px;
   width: 20px;
   height: 20px;
   top: 50%;
@@ -477,7 +477,13 @@
   margin-top: -10px;
   background-size: auto 120px;
 }
+.page-header__navi-link_account {
+  padding-left: 37px;
+  padding-right: 0;
+}
 .page-header__navi-link_account::before {
+  right: auto;
+  left: 0;
   width: 23px;
   height: 20px;
   margin-top: -10px;
